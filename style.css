@@ -1,0 +1,101 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+.carousel-item{
+    height: 25rem;
+    background-color: #0000;
+    position: relative;
+    color: #fff;
+    background-position: center;
+    background-size: cover; 
+}
+
+.img_container{
+    position: absolute;
+    top:0;
+    left:100px;
+    right:0;
+    padding: 120px 0;
+}
+
+.img_container h1, .img_container h3, main h3, .nav-item{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.logo_container, .nav_container{
+padding: 0 100px;
+}
+
+.company_certificate_container{
+    display: flex;
+}
+
+.website_logo_sm{
+    display: none;
+}
+
+.contact_btn{
+    background-color: #2a2a72;
+    background-image: linear-gradient(90deg, #2a2a72 20%, #009ffd 74%);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.contact_btn:hover{
+    color: #ffffff;
+}
+
+hr{
+    margin: 0;
+}
+
+.nav-link.active{
+color: #30478c!important;
+}
+
+main h3, footer h3{
+    color: #30478c;
+}
+
+footer i{
+    color: #30478c;
+}
+
+.clients_logo{
+    height: 90px;
+    width: 200px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 991px){
+    .website_logo, .company_certificate_container, hr{
+        display: none;
+    }
+
+    .website_logo_sm{
+        display: flex;
+    }
+
+    .contact_btn{
+        width: 160px;
+    }
+
+    .img_container{
+        padding:150px 0;
+    }
+
+    .clients_logo{
+        margin: 10px 50px;
+    }
+}
